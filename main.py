@@ -1,6 +1,6 @@
 import socket
 
-target = input('Target: ')
+target = input('Target (IP / Hostname): ')
 if target.isalpha():
     target = socket.gethostbyname(target)
 start_port = int(input("Start scan at port: "))
